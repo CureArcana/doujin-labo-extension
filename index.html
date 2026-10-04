@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>doujin-labo ウォッチリスト | Chrome 拡張機能のダウンロード</title>
+<meta name="description" content="DLsite と FANZA 同人の価格推移グラフ、お気に入り、値下げ通知をまとめた Chrome 拡張機能の配布ページです。">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>doujin-labo ウォッチリスト</h1>
+  <p class="lead">DLsite と FANZA 同人の作品を登録しておくと、指定した価格まで下がったときに通知する Chrome 拡張機能です。</p>
+  <p class="box">成人向け作品を扱うストアで使う拡張機能です。18 歳未満の方は利用できません。</p>
+
+  <p><a class="btn" href="downloads/doujin-labo-watchlist-0.7.0.zip">ダウンロード (v0.7.0)</a></p>
+  <p class="meta">最終更新日: 2026 年 10 月 4 日。Chrome と、Chrome と同じ仕組みのブラウザ (Edge、Brave など) で動きます。</p>
+
+  <h2>できること</h2>
+  <ul>
+    <li>作品ページに価格推移グラフを表示します。</li>
+    <li>「フォローする」で作品をウォッチリストに登録します。</li>
+    <li>「最安値で通知」を押すと、これまでの最安値まで下がったときに通知します。通知価格は自分で決めることもできます。</li>
+    <li>同じ作品が両方のストアにある場合は、安いほうのストアが分かります。</li>
+    <li>ウォッチリストは <a href="https://doujin-labo.net/favorites">doujin-labo.net のお気に入り</a>と同期します。スマホでも同じ一覧を見られます。</li>
+  </ul>
+
+  <h2>入れ方</h2>
+  <p>Chrome ウェブストアを通さずに配布しているため、手作業で読み込みます。所要時間は 2 分ほどです。</p>
+  <ol>
+    <li>上のボタンから zip をダウンロードして、展開します。</li>
+    <li>展開してできた <code>doujin-labo-watchlist</code> フォルダを、消さない場所へ移します。このフォルダを消すと拡張機能が動かなくなります。</li>
+    <li>Chrome のアドレスバーに <code>chrome://extensions</code> と入力して開きます。</li>
+    <li>右上の「デベロッパー モード」をオンにします。</li>
+    <li>「パッケージ化されていない拡張機能を読み込む」を押して、<code>doujin-labo-watchlist</code> フォルダを選びます。</li>
+    <li>DLsite か FANZA 同人の作品ページを開いて、グラフが出ることを確認します。</li>
+  </ol>
+  <p>Chrome を起動したときに「デベロッパー モードの拡張機能を無効にする」という案内が出ることがあります。案内を閉じれば、拡張機能はそのまま使えます。</p>
+
+  <h2>更新のしかた</h2>
+  <p>この配布方法では、拡張機能が自動で更新されません。新しい版が出ると、拡張機能のポップアップの上に黄色い帯で知らせます。</p>
+  <ol>
+    <li>このページから新しい zip をダウンロードして、展開します。</li>
+    <li>展開した中身で、いまの <code>doujin-labo-watchlist</code> フォルダを上書きします。</li>
+    <li><code>chrome://extensions</code> を開いて、拡張機能のカードにある更新ボタン (丸い矢印) を押します。</li>
+  </ol>
+  <p>フォルダを上書きする方法なら、ウォッチリストは消えません。拡張機能を一度削除して入れ直した場合は、オプション画面の同期コードで元の一覧に戻せます。</p>
+
+  <h2>扱う情報</h2>
+  <ul>
+    <li>開いた作品の ID と、ウォッチリストに登録した作品と通知価格を doujin-labo.net のサーバーへ送ります。</li>
+    <li>端末を見分けるための ID を拡張機能の中に保存します。氏名やメールアドレスは扱いません。</li>
+    <li>新しい版の確認のために、1 日 1 回このページの <code>version.json</code> を読みます。</li>
+  </ul>
+
+  <h2>更新履歴</h2>
+  <ul>
+    <li>v0.7.0 (2026 年 10 月 4 日): 新しい版が出たときにポップアップで知らせるようにしました。</li>
+  </ul>
+
+  <p class="note">この拡張機能は DLsite および FANZA の公式のものではありません。</p>
+</main>
+</body>
+</html>
